@@ -1,6 +1,6 @@
 
 import NavBar from "../componets/Navbar"
-
+import"./global.css"
 export const metadata = {
   title: 'Curso de next',
   description: 'curso de next de fazt',

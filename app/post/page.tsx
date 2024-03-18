@@ -6,7 +6,7 @@ async function loadPost() {
    const res = await  fetch("https://jsonplaceholder.typicode.com/posts")
    const data =  await res.json()
    
-  await new Promise((resolve)=> setTimeout(resolve,4000))
+  
   return data
    
 }
@@ -15,7 +15,7 @@ export interface Post {
     id:number
     body:string
 }
-const page =  async() => {
+const Postspage =  async() => {
   const dataPost: Post[] = await loadPost()
   return (
     <>Post pahe
@@ -27,4 +27,4 @@ const page =  async() => {
   )
 }
 
-export default page
+export default Postspage
